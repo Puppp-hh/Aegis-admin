@@ -1,0 +1,32 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="VulnerableLibrariesLocal" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="isIgnoringEnabled" value="true" />
+      <option name="ignoredModules">
+        <list>
+          <option value="aegis-common" />
+          <option value="aegis-common" />
+          <option value="aegis-common" />
+          <option value="aegis-common" />
+        </list>
+      </option>
+      <option name="ignoredPackages">
+        <list>
+          <option value="com.fasterxml.jackson.core:jackson-core:2.17.2" />
+          <option value="org.springframework.boot:spring-boot:3.3.5" />
+          <option value="org.eclipse.jetty:jetty-http:12.0.14" />
+          <option value="ch.qos.logback:logback-classic:1.5.11" />
+        </list>
+      </option>
+      <option name="ignoredReasons">
+        <list>
+          <option value="不可利用" />
+          <option value="不可利用" />
+          <option value="不可利用" />
+          <option value="不可利用" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
