@@ -4,25 +4,52 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6496f788-2f31-4588-9c5c-2bf59b7a5017" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aegis-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aegis-system/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="6496f788-2f31-4588-9c5c-2bf59b7a5017" name="更改" comment="initial">
+      <change afterPath="$PROJECT_DIR$/aegis-common/src/main/java/com/aegis/common/exception/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-common/src/main/java/com/aegis/common/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-common/src/main/java/com/aegis/common/result/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-common/src/main/java/com/aegis/common/result/ResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-common/src/main/java/com/aegis/common/utils/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/entity/SysLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/entity/SysMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/entity/SysRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/entity/SysRoleMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/entity/SysUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/entity/SysUserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/mapper/SysLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/mapper/SysMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/mapper/SysRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/mapper/SysUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/SysLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/SysMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/SysRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/SysUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/impl/SysLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/impl/SysMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/impl/SysRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Exception" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="安全分析" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6,
@@ -33,23 +60,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "库",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="aegis-admin" />
@@ -89,10 +116,25 @@
       <workItem from="1775203688588" duration="102000" />
       <workItem from="1775205153435" duration="3387000" />
       <workItem from="1775288201742" duration="13000" />
+      <workItem from="1775288225455" duration="3061000" />
+      <workItem from="1775291331871" duration="8397000" />
     </task>
+    <task id="LOCAL-00001" summary="initial">
+      <option name="closed" value="true" />
+      <created>1775288400650</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1775288400650</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial" />
   </component>
 </project>
