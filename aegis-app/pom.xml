@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 父项目改成我们自己的 aegis-admin，不是 Spring Boot -->
+    <parent>
+        <groupId>com.aegis</groupId>
+        <artifactId>aegis-admin</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>aegis-app</artifactId>
+    <name>aegis-app</name>
+
+    <dependencies>
+        <!-- 核心：依赖 system 模块，把整个项目串起来 -->
+        <dependency>
+            <groupId>com.aegis</groupId>
+            <artifactId>aegis-system</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!-- 热重启，改代码不用手动重启 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- 测试 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
