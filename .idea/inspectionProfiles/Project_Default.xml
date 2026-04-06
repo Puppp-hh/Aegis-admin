@@ -9,6 +9,8 @@
           <option value="aegis-common" />
           <option value="aegis-common" />
           <option value="aegis-common" />
+          <option value="aegis-admin" />
+          <option value="aegis-admin" />
         </list>
       </option>
       <option name="ignoredPackages">
@@ -17,10 +19,14 @@
           <option value="org.springframework.boot:spring-boot:3.3.5" />
           <option value="org.eclipse.jetty:jetty-http:12.0.14" />
           <option value="ch.qos.logback:logback-classic:1.5.11" />
+          <option value="org.springframework.boot:spring-boot:3.3.5" />
+          <option value="org.springframework:spring-context:6.1.14" />
         </list>
       </option>
       <option name="ignoredReasons">
         <list>
+          <option value="不可利用" />
+          <option value="不可利用" />
           <option value="不可利用" />
           <option value="不可利用" />
           <option value="不可利用" />
