@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 @SpringBootTest
@@ -59,5 +60,12 @@ public class SysUserServiceTest {
     // 删除用户
     public void delete(){
         sysUserService.removeById(2);
+    }
+
+    //密码测试
+    @Test
+    public void testPassword() {
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+        System.out.println(encoder.encode("admin123"));
     }
 }

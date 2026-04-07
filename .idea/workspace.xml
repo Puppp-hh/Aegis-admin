@@ -5,22 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6496f788-2f31-4588-9c5c-2bf59b7a5017" name="更改" comment="initial">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aegis-app/src/test/java/com/aegis/app/SysUserServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aegis-common/src/main/java/com/aegis/common/utils/MyMetaObjectHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/controller/SysLogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/controller/SysMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/controller/SysRoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/controller/SysUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-app/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-common/src/main/java/com/aegis/common/utils/JwtConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/dto/LoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/filter/JwtAuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/impl/UserDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/vo/LoginVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aegis-app/src/main/java/com/aegis/app/AegisAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-app/src/main/java/com/aegis/app/AegisAppApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aegis-app/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-app/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aegis-app/src/test/java/com/aegis/app/AegisAppApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aegis-app/src/test/java/com/aegis/app/SysUserSecurityTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aegis-app/src/test/java/com/aegis/app/SysUserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-app/src/test/java/com/aegis/app/SysUserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aegis-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aegis-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-system/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/entity/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/entity/SysUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/SysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/impl/SysUserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +30,7 @@
       <list>
         <option value="Exception" />
         <option value="Interface" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -39,10 +38,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Puppp-hh&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Puppp-hh/Aegis-admin.git&quot;,
+    &quot;accountId&quot;: &quot;6a001b4c-215d-4e57-820d-5efa85768b44&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -63,13 +78,21 @@
     "JUnit.SysUserServiceTest.list (1).executor": "Run",
     "JUnit.SysUserServiceTest.list.executor": "Run",
     "JUnit.SysUserServiceTest.save.executor": "Run",
+    "JUnit.SysUserServiceTest.testPassword.executor": "Run",
     "JUnit.SysUserServiceTest.update.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AegisAppApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
@@ -83,7 +106,7 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "settings.sync",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -93,7 +116,7 @@
       <recent name="com.aegis.app" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SysUserServiceTest.delete">
+  <component name="RunManager" selected="Spring Boot.AegisAppApplication">
     <configuration name="SysUserServiceTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aegis-app" />
       <extension name="coverage">
@@ -126,22 +149,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SysUserServiceTest.getById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aegis-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.aegis.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.aegis.app" />
-      <option name="MAIN_CLASS_NAME" value="com.aegis.app.SysUserServiceTest" />
-      <option name="METHOD_NAME" value="getById(java.lang.Integer)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SysUserServiceTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aegis-app" />
       <extension name="coverage">
@@ -153,6 +160,22 @@
       <option name="PACKAGE_NAME" value="com.aegis.app" />
       <option name="MAIN_CLASS_NAME" value="com.aegis.app.SysUserServiceTest" />
       <option name="METHOD_NAME" value="save" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SysUserServiceTest.testPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aegis-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aegis.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.aegis.app" />
+      <option name="MAIN_CLASS_NAME" value="com.aegis.app.SysUserServiceTest" />
+      <option name="METHOD_NAME" value="testPassword" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -195,11 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SysUserServiceTest.delete" />
         <item itemvalue="JUnit.SysUserServiceTest.update" />
-        <item itemvalue="JUnit.SysUserServiceTest.getById (1)" />
+        <item itemvalue="JUnit.SysUserServiceTest.testPassword" />
         <item itemvalue="JUnit.SysUserServiceTest.save" />
-        <item itemvalue="JUnit.SysUserServiceTest.getById" />
+        <item itemvalue="JUnit.SysUserServiceTest.getById (1)" />
+        <item itemvalue="JUnit.SysUserServiceTest.delete" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +248,9 @@
       <workItem from="1775291331871" duration="10465000" />
       <workItem from="1775369737363" duration="80000" />
       <workItem from="1775371172936" duration="1148000" />
-      <workItem from="1775372901474" duration="20126000" />
+      <workItem from="1775372901474" duration="44297000" />
+      <workItem from="1775492437386" duration="1003000" />
+      <workItem from="1775524903816" duration="5495000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -281,5 +306,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
     <option name="LAST_COMMIT_MESSAGE" value="initial" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
