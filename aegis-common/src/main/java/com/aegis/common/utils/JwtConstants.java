@@ -1,9 +1,8 @@
 package com.aegis.common.utils;
 
-import lombok.Data;
 
-@Data
 public class JwtConstants {
-    private String USERNAME="USERNAME";
-    private String USER_ID="USER_ID";
+    public static String USERNAME="username";
+    public static String USER_ID="userId";
+    public static String PERMISSION="permissions";
 }

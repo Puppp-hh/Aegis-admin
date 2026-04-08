@@ -3,6 +3,8 @@ package com.aegis.system.vo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 public class LoginVO {
@@ -11,4 +13,5 @@ public class LoginVO {
     private String username;
     private String nickname;
     private Long userId;
+    private List<String> permissions;
 }

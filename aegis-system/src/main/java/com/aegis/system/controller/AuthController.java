@@ -7,7 +7,7 @@ import com.aegis.system.dto.LoginDTO;
 import com.aegis.system.entity.SysUser;
 import com.aegis.system.service.SysUserService;
 import com.aegis.system.vo.LoginVO;
-import io.jsonwebtoken.Jwt;
+import com.aegis.system.service.SysMenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -26,6 +27,8 @@ public class AuthController {
     private SysUserService sysUserService;
     @Autowired
     private PasswordEncoder passwordEncoder;
+    @Autowired
+    private SysMenuService sysMenuService;
 
     @PostMapping("/login")
     public Result<?> login(@RequestBody LoginDTO loginDTO){
@@ -39,16 +42,24 @@ public class AuthController {
             throw new UsernameNotFoundException("密码错误!");
         }
 
-        JwtConstants jwtConstants = new JwtConstants();
         Map<String ,Object> map = new HashMap<>();
-        map.put(jwtConstants.getUSERNAME(), sysUser.getUsername());
-        map.put(jwtConstants.getUSER_ID(), sysUser.getId());
+
+        //权限表
+        List<String> sysMenuRoleList = sysMenuService.getMenuIds(sysUser.getId());
+
+        //存入用户名
+        map.put(JwtConstants.USERNAME, sysUser.getUsername());
+        //存入用户ID
+        map.put(JwtConstants.USER_ID, sysUser.getId());
+        //存入权限
+        map.put(JwtConstants.PERMISSION,sysMenuRoleList);
 
         String accessToken=JwtUtils.generateAccessToken(map);
         String refreshToken=JwtUtils.generateRefreshToken(map);
 
-        LoginVO loginVo=new LoginVO(accessToken,refreshToken,sysUser.getUsername(),sysUser.getNickname(),sysUser.getId());
+        //注入loginVo
+        LoginVO loginVo=new LoginVO(accessToken,refreshToken,sysUser.getUsername(),sysUser.getNickname(),sysUser.getId(),sysMenuRoleList);
 
-        return  Result.success(loginVo);
+        return Result.success(loginVo);
     }
 }

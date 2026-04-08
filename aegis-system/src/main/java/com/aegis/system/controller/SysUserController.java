@@ -3,9 +3,14 @@ package com.aegis.system.controller;
 import com.aegis.common.result.Result;
 import com.aegis.system.entity.SysUser;
 import com.aegis.system.service.SysUserService;
+import com.aegis.system.vo.UserVO;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
 
 @RestController
 @RequestMapping("/api/v1/users")
@@ -15,12 +20,20 @@ public class SysUserController {
     private SysUserService sysUserService;
 
     // 查询用户列表
+    @PreAuthorize("hasAuthority('sys:user:list')")
     @GetMapping
     public Result<?> list(){
-        return Result.success(sysUserService.list());
+        ArrayList<UserVO> userVO = new ArrayList<>();
+        for (SysUser sysUser : sysUserService.list()) {
+            UserVO userVO1 = new UserVO();
+            BeanUtils.copyProperties(sysUser, userVO1);
+            userVO.add(userVO1);
+        }
+        return Result.success(userVO);
     }
 
     // 根据id查询用户
+    @PreAuthorize("hasAuthority('sys:user:list')")
     @GetMapping("/{id}")
     public Result<?> getById(@PathVariable Long id){
         SysUser sysUser=sysUserService.getById(id);
@@ -28,6 +41,7 @@ public class SysUserController {
     }
 
     // 新增用户
+    @PreAuthorize("hasAuthority('sys:user:add')")
     @PostMapping
     public Result<?> save(@RequestBody SysUser sysUser){
         sysUserService.save(sysUser);
@@ -36,6 +50,7 @@ public class SysUserController {
 
     // 修改用户
     // 后续有需要的修改的再添加
+    @PreAuthorize("hasAuthority('sys:user:edit')")
     @PutMapping("/{id}")
     public Result<?> update(@PathVariable Long id, @RequestBody SysUser sysUser){
         sysUserService.update(
@@ -52,6 +67,7 @@ public class SysUserController {
     }
 
     // 删除用户
+    @PreAuthorize("hasAuthority('sys:user:delete')")
     @DeleteMapping("/{id}")
     public Result<?> delete(@PathVariable Long id){
         sysUserService.removeById(id);

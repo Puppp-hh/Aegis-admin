@@ -5,20 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6496f788-2f31-4588-9c5c-2bf59b7a5017" name="更改" comment="initial">
-      <change afterPath="$PROJECT_DIR$/aegis-app/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aegis-common/src/main/java/com/aegis/common/utils/JwtConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/dto/LoginDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/filter/JwtAuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/impl/UserDetailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/vo/LoginVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/mapper/SysRoleMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/mapper/SysUserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/SysRoleMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/SysUserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/impl/SysRoleMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/impl/SysUserRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/vo/UserVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aegis-app/src/test/java/com/aegis/app/SysUserSecurityTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aegis-app/src/test/java/com/aegis/app/SysUserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-app/src/test/java/com/aegis/app/SysUserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aegis-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/SysUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aegis-app/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-app/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aegis-common/src/main/java/com/aegis/common/utils/JwtConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-common/src/main/java/com/aegis/common/utils/JwtConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/controller/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/filter/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/filter/JwtAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/SysMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/SysMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/impl/SysMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/service/impl/SysMenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/vo/LoginVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/aegis-system/src/main/java/com/aegis/system/vo/LoginVO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +33,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Exception" />
-        <option value="Interface" />
         <option value="package-info" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -70,47 +74,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.SysUserServiceTest.delete.executor": "Run",
-    "JUnit.SysUserServiceTest.getById (1).executor": "Run",
-    "JUnit.SysUserServiceTest.getById.executor": "Run",
-    "JUnit.SysUserServiceTest.list (1).executor": "Run",
-    "JUnit.SysUserServiceTest.list.executor": "Run",
-    "JUnit.SysUserServiceTest.save.executor": "Run",
-    "JUnit.SysUserServiceTest.testPassword.executor": "Run",
-    "JUnit.SysUserServiceTest.update.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.AegisAppApplication.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.SysUserServiceTest.delete.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SysUserServiceTest.getById (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SysUserServiceTest.getById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SysUserServiceTest.list (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SysUserServiceTest.list.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SysUserServiceTest.save.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SysUserServiceTest.testPassword.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SysUserServiceTest.update.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AegisAppApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.aegis.app" />
@@ -218,8 +222,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SysUserServiceTest.update" />
         <item itemvalue="JUnit.SysUserServiceTest.testPassword" />
+        <item itemvalue="JUnit.SysUserServiceTest.update" />
         <item itemvalue="JUnit.SysUserServiceTest.save" />
         <item itemvalue="JUnit.SysUserServiceTest.getById (1)" />
         <item itemvalue="JUnit.SysUserServiceTest.delete" />
@@ -250,7 +254,9 @@
       <workItem from="1775371172936" duration="1148000" />
       <workItem from="1775372901474" duration="44297000" />
       <workItem from="1775492437386" duration="1003000" />
-      <workItem from="1775524903816" duration="5495000" />
+      <workItem from="1775524903816" duration="18724000" />
+      <workItem from="1775577214214" duration="9347000" />
+      <workItem from="1775638853448" duration="2637000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
