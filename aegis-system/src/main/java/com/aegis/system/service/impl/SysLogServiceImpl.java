@@ -9,4 +9,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class SysLogServiceImpl extends ServiceImpl<SysLogMapper, SysLog>
     implements SysLogService {
+
+    @Override
+    public void saveFromMQ(SysLog sysLog){
+        this.save(sysLog);
+    }
+
 }

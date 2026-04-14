@@ -1,0 +1,22 @@
+{
+  "code": 200,
+  "message": "success",
+  "data": {
+    "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJwZXJtaXNzaW9ucyI6WyJzeXM6dXNlcjpsaXN0Iiwic3lzOnVzZXI6YWRkIiwic3lzOnVzZXI6ZWRpdCIsInN5czp1c2VyOmRlbGV0ZSIsInN5czpyb2xlOmxpc3QiLCJzeXM6cm9sZTphZGQiLCJzeXM6cm9sZTplZGl0Iiwic3lzOnJvbGU6ZGVsZXRlIl0sInVzZXJJZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NTk4Mzc0MSwiZXhwIjoxNzc1OTkwOTQxfQ.tCmHoIeFdrSBn6xcRawHUueiAimQgfW3cqYSYWqJR7o",
+    "refreshToken": "eyJhbGciOiJIUzI1NiJ9.eyJwZXJtaXNzaW9ucyI6WyJzeXM6dXNlcjpsaXN0Iiwic3lzOnVzZXI6YWRkIiwic3lzOnVzZXI6ZWRpdCIsInN5czp1c2VyOmRlbGV0ZSIsInN5czpyb2xlOmxpc3QiLCJzeXM6cm9sZTphZGQiLCJzeXM6cm9sZTplZGl0Iiwic3lzOnJvbGU6ZGVsZXRlIl0sInVzZXJJZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NTk4Mzc0MSwiZXhwIjoxNzc2NTg4NTQxfQ.d7aMqnRA3gRlJS5Et6Byek_2YgjTNui9QMNhuqZL7tc",
+    "username": "admin",
+    "nickname": "超级管理员",
+    "userId": 1,
+    "permissions": [
+      "sys:user:list",
+      "sys:user:add",
+      "sys:user:edit",
+      "sys:user:delete",
+      "sys:role:list",
+      "sys:role:add",
+      "sys:role:edit",
+      "sys:role:delete"
+    ]
+  },
+  "timestamp": 1775983741954
+}

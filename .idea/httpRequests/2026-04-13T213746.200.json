@@ -1,0 +1,6 @@
+{
+  "code": 500,
+  "message": "org.springframework.security.core.userdetails.UsernameNotFoundException: 未找到用户名:xqw",
+  "data": null,
+  "timestamp": 1776087466243
+}

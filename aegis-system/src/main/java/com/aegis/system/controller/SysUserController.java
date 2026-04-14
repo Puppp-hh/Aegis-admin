@@ -1,5 +1,6 @@
 package com.aegis.system.controller;
 
+import com.aegis.common.annotation.OperationLog;
 import com.aegis.common.result.Result;
 import com.aegis.system.entity.SysUser;
 import com.aegis.system.service.SysUserService;
@@ -22,6 +23,7 @@ public class SysUserController {
     // 查询用户列表
     @PreAuthorize("hasAuthority('sys:user:list')")
     @GetMapping
+    @OperationLog("列出所有用户")
     public Result<?> list(){
         ArrayList<UserVO> userVO = new ArrayList<>();
         for (SysUser sysUser : sysUserService.list()) {
@@ -35,6 +37,7 @@ public class SysUserController {
     // 根据id查询用户
     @PreAuthorize("hasAuthority('sys:user:list')")
     @GetMapping("/{id}")
+    @OperationLog("通过ID查找用户")
     public Result<?> getById(@PathVariable Long id){
         SysUser sysUser=sysUserService.getById(id);
         return Result.success(sysUser);
@@ -43,6 +46,7 @@ public class SysUserController {
     // 新增用户
     @PreAuthorize("hasAuthority('sys:user:add')")
     @PostMapping
+    @OperationLog("新增用户")
     public Result<?> save(@RequestBody SysUser sysUser){
         sysUserService.save(sysUser);
         return Result.success(sysUser);
@@ -52,6 +56,7 @@ public class SysUserController {
     // 后续有需要的修改的再添加
     @PreAuthorize("hasAuthority('sys:user:edit')")
     @PutMapping("/{id}")
+    @OperationLog("更新用户信息")
     public Result<?> update(@PathVariable Long id, @RequestBody SysUser sysUser){
         sysUserService.update(
                 null,
@@ -69,6 +74,7 @@ public class SysUserController {
     // 删除用户
     @PreAuthorize("hasAuthority('sys:user:delete')")
     @DeleteMapping("/{id}")
+    @OperationLog("删除用户")
     public Result<?> delete(@PathVariable Long id){
         sysUserService.removeById(id);
         return Result.success();

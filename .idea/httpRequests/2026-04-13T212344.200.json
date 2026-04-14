@@ -1,0 +1,16 @@
+{
+  "code": 200,
+  "message": "success",
+  "data": {
+    "accessToken": "eyJ****",
+    "refreshToken": "eyJ****",
+    "username": "normalUser",
+    "nickname": "普通用户",
+    "userId": 3,
+    "permissions": [
+      "sys:user:list",
+      "sys:role:list"
+    ]
+  },
+  "timestamp": 1776086624228
+}

@@ -1,5 +1,6 @@
 package com.aegis.system.controller;
 
+import com.aegis.common.annotation.OperationLog;
 import com.aegis.common.result.Result;
 import com.aegis.common.utils.JwtConstants;
 import com.aegis.common.utils.JwtUtils;
@@ -31,6 +32,7 @@ public class AuthController {
     private SysMenuService sysMenuService;
 
     @PostMapping("/login")
+    @OperationLog("登陆")
     public Result<?> login(@RequestBody LoginDTO loginDTO){
         SysUser sysUser = sysUserService.getUserByName(loginDTO.getUsername());
 

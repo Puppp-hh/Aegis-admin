@@ -1,5 +1,6 @@
 package com.aegis.system.entity;
 
+import com.aegis.common.annotation.Sensitive;
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,6 +8,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+
+import static com.aegis.common.model.SensitiveType.*;
 
 @Data
 @Builder
@@ -19,10 +22,17 @@ public class SysUser {
     private Long id;
 
     private String username;
+
+    @Sensitive(type = PASSWORD)
     private String password;
-    private String nickname;
+
+    @Sensitive(type = PHONE)
     private String phone;
+
+    @Sensitive(type = EMAIL)
     private String email;
+
+    private String nickname;
     private String avatar;
     private Integer status;
     private String createBy;

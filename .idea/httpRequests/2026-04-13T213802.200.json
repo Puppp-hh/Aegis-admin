@@ -1,0 +1,22 @@
+{
+  "code": 200,
+  "message": "success",
+  "data": {
+    "accessToken": "eyJ****",
+    "refreshToken": "eyJ****",
+    "username": "admin",
+    "nickname": "超级管理员",
+    "userId": 1,
+    "permissions": [
+      "sys:user:list",
+      "sys:user:add",
+      "sys:user:edit",
+      "sys:user:delete",
+      "sys:role:list",
+      "sys:role:add",
+      "sys:role:edit",
+      "sys:role:delete"
+    ]
+  },
+  "timestamp": 1776087482718
+}

@@ -2,6 +2,7 @@ package com.aegis.system.filter;
 
 import com.aegis.common.utils.JwtConstants;
 import com.aegis.common.utils.JwtUtils;
+import com.aegis.system.entity.JwtUserEntity;
 import io.jsonwebtoken.Claims;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -41,6 +42,8 @@ public class JwtAuthFilter extends OncePerRequestFilter {
             Claims claims = JwtUtils.parseToken(token);
             // 存入 Security 上下文
             String username = claims.get(JwtConstants.USERNAME).toString();
+            Integer userId = (Integer) claims.get(JwtConstants.USER_ID);
+            JwtUserEntity userEntity = new JwtUserEntity(userId, username);
             List<String> permissions = (List<String>) claims.get(JwtConstants.PERMISSION);
 
             List<SimpleGrantedAuthority> authorities = permissions.stream()
@@ -49,13 +52,14 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
             UsernamePasswordAuthenticationToken authentication =
                     new UsernamePasswordAuthenticationToken
-//            第一个：username → 用户名，标识是谁
+//            第一个：userId → 用户 ID，标识是谁,username → 用户名，标识是谁
 //            第二个：null → 密码，token 验证阶段不需要密码所以是 null
-//            第三个 权限列表
-                            (username, null,authorities);
+//            第三个: 权限列表
+                            (userEntity, null, authorities);
 
             SecurityContextHolder.getContext().setAuthentication(authentication);
         } catch (Exception e) {
+            System.out.println("token解析失败：" + e.getMessage());
             filterChain.doFilter(request, response);
             return;
         }
